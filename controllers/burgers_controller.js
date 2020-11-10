@@ -36,7 +36,7 @@ router.get("/", function(req, res) {
   
     console.log("condition from CONTROLLER", condition);
   
-    cat.update({
+    burger.update({
       devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {
